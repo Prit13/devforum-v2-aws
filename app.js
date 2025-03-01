@@ -61,6 +61,10 @@ app.use("/api/comments", commentRoute);
 
 app.use("/api/file", upload)
 
+app.use("/", (req, res) => {
+    res.send("Welcome to DevForum API");
+});
+
 
 
 
