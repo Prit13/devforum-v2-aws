@@ -84,7 +84,7 @@ app.get("/file/:filename", async (req, res) => {
 });
 
 // Start server
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
     connectDB();
     console.log(`App is running on port ${PORT}`);
